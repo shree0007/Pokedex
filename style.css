@@ -1,0 +1,228 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    width: 96px;
+    text-align: center;
+    filter: saturate(2);
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'Pokemon Solid', sans-serif;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: rgb(56, 254, 34);
+
+
+}
+
+h2 {
+    font-size: small;
+    margin-right: 0.5rem;
+    color: rgb(34, 217, 144);
+
+
+
+}
+
+body {
+    background-image: linear-gradient(to right, blue, orange);
+    font-family: 'Gill Sans', 'Gill Sans MT';
+}
+
+.Information {
+    margin-bottom: 2rem;
+}
+
+.Information h2 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+
+}
+
+
+.Information p {
+    font-size: medium;
+    font-family: cursive, sans-serif;
+    margin: 0;
+    background-image: linear-gradient(to right, blue, orange);
+}
+
+.Information img {
+    width: 70px;
+    filter: saturate(2);
+}
+
+
+.generation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+
+}
+
+button {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    margin-right: 0.3rem;
+    font-size: small;
+    border: none;
+    color: gray;
+    cursor: pointer;
+
+}
+
+button:hover {
+    filter: saturate(5);
+    color: black;
+    border: 1px solid black;
+
+}
+
+.types {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+
+}
+
+
+
+.badges {
+    width: 50px;
+    border: none;
+    font-size: small;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+
+}
+
+input {
+    width: 300px;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+}
+
+
+
+#pokemons {
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    animation: shake 0.5s;
+
+}
+
+img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+
+p {
+    font-family: 'Gill Sans', sans-serif;
+    font-size: medium;
+    border-radius: 3px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(56, 191, 215);
+    border-radius: 8px;
+    color: white;
+
+}
+
+
+.cards {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: solid;
+    border-radius: 10px;
+    margin: 3rem;
+    filter: grayscale(50%);
+    list-style: none;
+    cursor: pointer;
+
+}
+
+
+.cards:hover {
+    box-shadow: 8px 16px 16px hsl(0deg 0% 0% / 0.38);
+    filter: saturate(200%);
+
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="pics/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Pokedex</h1>
+        <img src="pics/pokeball.png" alt="pokeball">
+    </header>
+    <div class="Information">
+
+        <p>Welcome to my Pokedex - Shree</p>
+        <p><img src="pics/namaste.png" alt="namaste"></p>
+        <h2>Information:</h2>
+        <p>- First, please click generations button to see pokemons belonging to the respective generations</p>
+        <p>- After that, you can
+            search for your favorite pokemons either by clicking pokemon types button or simply by typing ID, name ,or
+            type of pokemons in a searchbox
+        </p>
+    </div>
+
+    <div class="generation">
+        <h2>Generations:</h2>
+        <button class="btngen">I</button>
+        <button class="btngen"> II</button>
+        <button class="btngen">III</button>
+        <button class="btngen">IV</button>
+        <button class="btngen">V</button>
+        <button class="btngen">VI</button>
+        <button class="btngen">VII</button>
+        <button class="btngen">VIII</button>
+        <button class="btngen">IX</button>
+    </div>
+
+    <div class="types">
+
+        <div class="types">
+            <h2>Types:</h2>
+            <button class="badges">Normal</button>
+            <button class="badges">Fire</button>
+            <button class="badges">Water</button>
+            <button class="badges">Grass</button>
+            <button class="badges">Flying</button>
+            <button class="badges">Fighting</button>
+            <button class="badges">Poison</button>
+            <button class="badges">Electric</button>
+            <button class="badges">Ground</button>
+            <button class="badges">Rock</button>
+            <button class="badges">Psychic</button>
+            <button class="badges">Ice</button>
+            <button class="badges">Bug</button>
+            <button class="badges">Ghost</button>
+            <button class="badges">Steel</button>
+            <button class="badges">Dragon</button>
+            <button class="badges">Dark</button>
+            <button class="badges">Fairy</button>
+        </div>
+    </div>
+
+
+    <div class="search">
+        <input type="search" id="search-bar" placeholder="Search pokemons by ID, name or types">
+    </div>
+
+    <div>
+        <ul id="pokemons"></ul>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
